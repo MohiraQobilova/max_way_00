@@ -41,7 +41,7 @@ def index(request):
     }
 
     response = render(request, 'food/index.html', ctx)
-    response.set_cookie("greeting", 'hello')
+    response.set_cookie("greeting", 'Salom')
     return response
 
 def main_order(request):

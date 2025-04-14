@@ -119,7 +119,7 @@ def category_create(request):
     model = Category()
     form = forms.CategoryForm(request.POST or None, instance=model)
     if request.POST and form.is_valid():
-        form.save() # form is saved
+        form.save()  # form is saved
         return redirect('category_list')
     ctx = {
         'model':model,
